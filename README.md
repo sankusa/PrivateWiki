@@ -1,2 +1,2 @@
-# Sankusa 個人 Wiki
+# Sankusa 個人Wiki
 このメッセージが 見れるのは おかしいよ
