@@ -1,4 +1,2 @@
-# PrivateWiki
-sankusaの個人用wikiです
-
+# Sankusa Private Wiki
 このメッセージが 見れるのは おかしいよ
