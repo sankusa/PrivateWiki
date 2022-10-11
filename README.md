@@ -1,7 +1,9 @@
 # 三草 個人wiki
-こんちくわ
-## Markdown
-[MDチートシート](/Markdown/CheatSheet.md)
+
+<details>
+<summary><h2>Markdown</h2></summary>
+<a href="/Markdown/CheatSheet.md">MDチートシート</a>
+</details>
 
 ## Unity
 ### Shader Graph
