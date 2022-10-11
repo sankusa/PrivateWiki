@@ -1,3 +1,3 @@
 # 三草 個人wiki
-## MD
-[チートシート](/Markdown/CheatSheet.md)
+## Markdown
+[MDチートシート](/Markdown/CheatSheet.md)
