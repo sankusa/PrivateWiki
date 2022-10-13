@@ -11,7 +11,7 @@
 >> #### ParticleSystem
 >>> [メモ](/Unity/ParticleSystem/Memo.md)  
 >> #### その他
->>> [メモ](/Unity/Other/Memo.md)  
+>>> [MonoBehaviour継承型をInterface型で保持している場合のDestroy判定](/Unity/Other/DestroyCheckTroughInterface.md)  
 
 ## ゲーム開発
 > [UIデザインメモ](/GameDevelopment/UIDesign.md) 
