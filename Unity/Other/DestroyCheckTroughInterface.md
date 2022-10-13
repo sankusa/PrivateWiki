@@ -1,4 +1,4 @@
-#### Unity特有のNullチェック
+#### MonoBehaviour継承型をInterface型で保持していた場合のDestroy判定
 > UnityEngine.Objectは==演算子をオーバーロードしているらしい。  
 > 恐らくDestroy済みの場合に==nullで判定できるようにするためと思われる。  
 > 
