@@ -5,6 +5,8 @@
 >> [MDチートシート](/Markdown/CheatSheet.md) 
 >
 > ### Unity
+>> #### エディタ拡張
+>>> [チートシート](/Unity/EditorExtension/CheatSheet.md)  
 >> #### ShaderGraph
 >>> [ノード](/Unity/ShaderGraph/Node.md)  
 >>> [ノード応用](/Unity/ShaderGraph/AppliedNode.md)  
