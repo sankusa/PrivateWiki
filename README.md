@@ -19,7 +19,7 @@
 >> #### Zenject
 >>> [Zenjectメモ](/Unity/Zenject/ZenjectMemo.md) 
 ## プログラム設計
->> [設計わからん](/ProgramDesign/ProgramDesign.md) 
+> [設計わからん](/ProgramDesign/ProgramDesign.md) 
 
 
 ## ゲーム開発
