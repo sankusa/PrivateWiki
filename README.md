@@ -18,6 +18,9 @@
 > ### Unityアセット
 >> #### Zenject
 >>> [Zenjectメモ](/Unity/Zenject/ZenjectMemo.md) 
+## プログラム設計
+>> [設計わからん](/ProgramDesign/ProgramDesign.md) 
+
 
 ## ゲーム開発
 > [UIデザインメモ](/GameDevelopment/UIDesign.md) 
