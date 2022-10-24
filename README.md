@@ -4,7 +4,7 @@
 > ### Markdown
 >> [MDチートシート](/Markdown/CheatSheet.md) 
 > ### C#  
->> [テクい記法](/C#/C#Notation.md)  
+>> [テクい記法](/C#)  
 > ### Unity
 >> #### エディタ拡張
 >>> [チートシート](/Unity/EditorExtension/CheatSheet.md)  
