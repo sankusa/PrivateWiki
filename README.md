@@ -3,7 +3,8 @@
 ## プログラミング
 > ### Markdown
 >> [MDチートシート](/Markdown/CheatSheet.md) 
->
+> ### C#  
+>> [テクい記法](/Unity/C#/C#Notation.md)  
 > ### Unity
 >> #### エディタ拡張
 >>> [チートシート](/Unity/EditorExtension/CheatSheet.md)  
