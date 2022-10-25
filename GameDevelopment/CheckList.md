@@ -11,5 +11,7 @@
 >>・アセット管理方法(Resources、AssetBundle、Adressable)  
 >>・アセットの著作権情報一覧ファイル作成  
 >>・空ビルド  
+>>・Gitリポジトリ作成  
+>>・素材用プロジェクト作成  
 >#### 開発初期
 >>・UIパーツのプレハブ化(Text,Button,特定のImage)
