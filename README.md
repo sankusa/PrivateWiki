@@ -16,7 +16,7 @@
 >>> [メモ](/Unity/ParticleSystem/Memo.md)  
 >> #### その他
 >>> [Tips](/Unity/Other/Tips.md)  
->>> [不可対策](/Unity/Other/Performance.md)  
+>>> [負荷対策](/Unity/Other/Performance.md)  
 >>> [MonoBehaviour継承型をInterface型で保持している場合のDestroy判定](/Unity/Other/DestroyCheckTroughInterface.md)  
 > ### Unityアセット
 >> #### Zenject
