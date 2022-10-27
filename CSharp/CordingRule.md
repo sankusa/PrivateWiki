@@ -56,6 +56,6 @@
 >>・参考語句リスト   
 >>接頭辞、接尾辞・・・○○Prefix,○○Suffix  
 >>現在の○○・・・current○○  
->>見出し・・・caption
+>>見出し・・・caption  
 >参考  
 >https://murashun.jp/article/programming/naming-conventions.html  
