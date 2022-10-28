@@ -1,5 +1,8 @@
-### EditorWindow
-#### テンプレ
+>- [EditorWindowテンプレ](#editorwindowテンプレ)
+>- [EditorWindowのライフサイクル関数](#editorwindowのライフサイクル関数)  
+>- [Objectがアセットか判定する](#objectがアセットか判定する)  
+
+### EditorWindowテンプレ
 ```
 public class TestWindow : EditorWindow
 {
@@ -35,38 +38,24 @@ public class TestWindow : EditorWindow
     }
 }
 ```
-#### ライフサイクル
-```
-public class TestWindow : EditorWindow
-{
-    // UnityEditor上部のツールバーから呼び出せるようになる
-    [MenuItem("Tools/" + nameof(TestWindow))]
-    // 関数名はOpenでなくても何でもいい
-    private static void Open()
-    {
-        // ConvenientWindowを表示する
-        GetWindow<TestWindow>();
-    }
+### EditorWindowのライフサイクル関数
+>- void OnEnable()  
+>ウィンドウ生成時、コンパイル時、Unityエディタ起動時(ウィンドウが存在すれば)に呼ばれる  
+>- void OnDisable()、void OnDestroy()  
+>ウインドウを閉じる時、Unityエディタを閉じる時に呼ばれる  
+>- void Update()  
+>1秒間に200回前後呼び出される。(バックグラウンドだと10fpsくらいらしい)  
+>- void OnGUI()  
+>ウィンドウの描画  
+>
+>※ゲーム再生時(正確にはアセンブリのロード時)、OnDisable→OnEnableの順で呼ばれる  
+>
+>参考サイト  
+>【Unity】 EditorWindowのライフサイクルの謎  
+>https://www.f-sp.com/entry/2016/09/04/231754  
 
-    // ウィンドウ生成時に呼ばれる
-    // コンパイル時にも呼ばれる
-    // Unityエディタを開いたときも呼ばれる
-    void OnEnable(){}
-    
-    // ウインドウを閉じる時に呼ばれる
-    // Unityエディタを閉じる時に呼ばれる
-    void OnDisable(){}
-    
-    // ウインドウを閉じる時に呼ばれる
-    // Unityエディタを閉じる時に呼ばれる
-    void OnDestroy(){}
-    
-    // 1秒間に200回前後呼び出される。(バックグラウンドだと10fpsくらいらしい)
-    void Update(){}
-    
-    // ウィンドウの描画
-    void OnGUI(){}
-    
-    // ※ゲーム再生時(正確にはアセンブリのロード時)、OnDisable→OnEnableの順で呼ばれる
-}
-```
+### Objectがアセットか判定する
+>```
+>bool AssetDatabase.Contains(Object obj)
+>```
+>シーン上やランタイムならfalse
