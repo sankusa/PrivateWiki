@@ -1,6 +1,7 @@
 - [EditorWindowテンプレ](#editorwindowテンプレ)
 - [EditorWindowでScriptableObjectを更新する場合](#editorwindowでscriptableobjectを更新する場合)
 - [EditorWindowのライフサイクル関数](#editorwindowのライフサイクル関数)  
+- [Objectのロード(1件、全件)](#objectのロード1件全件)
 - [Objectがアセットか判定する](#objectがアセットか判定する)  
 
 ***
@@ -86,6 +87,35 @@ void OnGUI()
 
 参考  
 [【Unity】 EditorWindowのライフサイクルの謎  ](https://www.f-sp.com/entry/2016/09/04/231754)  
+
+***
+
+## Objectのロード(1件、全件)
+```
+private static T LoadAsset<T> () where T : Object {
+    string[] guids = AssetDatabase.FindAssets("t:" + typeof(T).Name);
+
+    if(guids.Length == 0) return default(T);
+
+    string path = AssetDatabase.GUIDToAssetPath(guids[0]);
+    T asset = (T)AssetDatabase.LoadAssetAtPath(path, typeof(T));
+
+    return asset;
+}
+
+public static List<T> LoadAllAssets<T> () where T : Object {
+    List<T> list = new List<T>(); 
+    
+    string[] guids = AssetDatabase.FindAssets("t:" + typeof(T).Name);
+
+    foreach(string guid in guids) {
+        string path = AssetDatabase.GUIDToAssetPath(guid);
+        T asset = (T)AssetDatabase.LoadAssetAtPath(path, typeof(T));
+        list.Add(asset);
+    }
+    return list;
+}
+```
 
 ***
 
