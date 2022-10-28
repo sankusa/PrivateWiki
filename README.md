@@ -9,6 +9,7 @@
 > ### Unity
 >> #### エディタ拡張
 >>> [チートシート](/Unity/EditorExtension/CheatSheet.md)  
+>>> [Tips](/Unity/EditorExtension/Tips.md)  
 >> #### ShaderGraph
 >>> [ノード](/Unity/ShaderGraph/Node.md)  
 >>> [ノード応用](/Unity/ShaderGraph/AppliedNode.md)  
