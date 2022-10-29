@@ -36,3 +36,6 @@
 
 ## 雑学
 > [雑学ディレクトリ](/Trivia) 
+
+## ログ
+> [WitchFruit](/Log/Develop/WitchFruit.md)  
