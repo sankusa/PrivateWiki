@@ -14,4 +14,4 @@ NCMBObject.AddUniqueToList(string key, IEnumearble list)の仕様
 厳密にやるなら配列よりリレーションの方がよさそう？  
 
 NCMBObject.SaveAsync()  
-通信後、NCMBObjectに「更新した列」、「objectId」、「CreateDate」、「UpdateTime」が設定されて帰ってくる。
+通信後、NCMBObjectに「objectId」、「CreateDate」、「UpdateTime」が設定されて帰ってくる。
