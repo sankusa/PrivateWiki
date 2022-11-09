@@ -12,3 +12,6 @@ NCMBObject.AddUniqueToList(string key, IEnumearble list)の仕様
 多分検知できない  
 
 厳密にやるなら配列よりリレーションの方がよさそう？  
+
+NCMBObject.SaveAsync()  
+通信後、NCMBObjectからobjectId,CreateDate,UpdateTimeが取得できる  
