@@ -34,7 +34,7 @@
 ## ゲーム開発
 > [チェクリスト](/GameDevelopment/CheckList.md)  
 > [UIデザインメモ](/GameDevelopment/UIDesign.md) 
-> [チェクリスト](/GameDevelopment/Idea.md)  
+> [アイデア](/GameDevelopment/Idea.md)  
 
 ## イラスト
 > [シワの描き方](/Picture/Wrinkle.md)  
