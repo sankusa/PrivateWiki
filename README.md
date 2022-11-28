@@ -40,6 +40,9 @@
 ## イラスト
 > [シワの描き方](/Picture/Wrinkle.md)  
 
+## 創作
+> [ネーミング](Creation/Naming.md)
+
 ## 雑学
 > [雑学ディレクトリ](/Trivia) 
 
