@@ -33,6 +33,7 @@
 
 
 ## ゲーム開発
+> [ゲームデザイン](/GameDevelopment/GameDesign.md)  
 > [チェクリスト](/GameDevelopment/CheckList.md)  
 > [UIデザインメモ](/GameDevelopment/UIDesign.md)  
 > [アイデア](/GameDevelopment/Idea.md)  
