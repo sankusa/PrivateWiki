@@ -38,6 +38,9 @@
 > [チェクリスト](/GameDevelopment/CheckList.md)  
 > [UIデザインメモ](/GameDevelopment/UIDesign.md)  
 
+## GitHub
+> [Tips](/GitHub/GitHubTips.md)  
+
 ## イラスト
 > [シワの描き方](/Picture/Wrinkle.md)  
 
