@@ -6,6 +6,7 @@
 > ### C#  
 >> [コーディング規約](/CSharp/CordingRule.md)  
 >> [テクい記法](/CSharp/CSharpNotation.md)  
+>> [Linq](/CSharp/Linq.md)  
 > ### Unity
 >> #### エディタ拡張
 >>> [基本](/Unity/EditorExtension/Basic.md)  
