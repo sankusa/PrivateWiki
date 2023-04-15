@@ -4,6 +4,7 @@
 > ### Markdown
 >> [MDチートシート](/Markdown/CheatSheet.md) 
 > ### C#  
+>> [String型](/CSharp/String.md)  
 >> [コーディング規約](/CSharp/CordingRule.md)  
 >> [テクい記法](/CSharp/CSharpNotation.md)  
 >> [Linq](/CSharp/Linq.md)  
