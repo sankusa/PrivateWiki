@@ -1,5 +1,5 @@
 # 三草 個人wiki
-
+>> [プログラム組むときに見ろ](/Programming/Memo.md) 
 ## プログラミング
 > ### Markdown
 >> [MDチートシート](/Markdown/CheatSheet.md) 
