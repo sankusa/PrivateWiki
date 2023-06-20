@@ -21,6 +21,7 @@
 >> #### ParticleSystem
 >>> [メモ](/Unity/ParticleSystem/Memo.md)  
 >> #### その他
+>>> [トラブルシューティング記録](/Unity/Other/TroubleShooting.md)  
 >>> [Tips](/Unity/Other/Tips.md)  
 >>> [例外対応](/Unity/Other/ErrorHandling.md)  
 >>> [シリアライズ・デシリアライズ](/Unity/Other/Serialize.md)  
