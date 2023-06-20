@@ -1,5 +1,6 @@
 # 三草 個人wiki
->> [プログラム組むときに見ろ](/Programming/Memo.md) 
+> [プログラムを組むときに見るべし](/Programming/Memo.md)  
+> [命名チートシート](/Programming/Naming.md)  
 ## プログラミング
 > ### Markdown
 >> [MDチートシート](/Markdown/CheatSheet.md) 
