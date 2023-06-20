@@ -20,5 +20,7 @@
 「親クラス.子クラス.子クラスのメソッド」みたいな参照をせず、子クラスのアクセサを用意する。  
 ※結局のところはケースバイケース  
 
+### 副作用は最小限に
+
 ### 参考
 [不吉な匂い](http://objectclub.jp/technicaldoc/refactoring/refact-smell)
