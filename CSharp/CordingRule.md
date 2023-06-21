@@ -56,6 +56,8 @@
 >>・参考語句リスト   
 >>接頭辞、接尾辞・・・○○Prefix,○○Suffix  
 >>現在の○○・・・current○○  
->>見出し・・・caption  
->参考  
->https://murashun.jp/article/programming/naming-conventions.html  
+>>見出し・・・caption
+>>・ラムダ式の引数  
+>>型の頭文字を使ってるケースが多いけど「x」でいいんじゃないか。式の中身が複雑ならちゃんとした命名に。   
+
+
