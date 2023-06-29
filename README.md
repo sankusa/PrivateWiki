@@ -48,7 +48,10 @@
 > [Tips](/GitHub/GitHubTips.md)  
 
 ## イラスト
-> [シワの描き方](/Picture/Wrinkle.md)  
+> [シワの描き方](/Picture/Wrinkle.md)
+
+## 字の書き方
+> [字の書き方](/Picture/Calligraphy/Base.md)  
 
 ## 創作
 > [ネーミング](Creation/Naming.md)
