@@ -48,6 +48,7 @@
 > [Tips](/GitHub/GitHubTips.md)  
 
 ## イラスト
+> [意識シート](/Picture/ConsciousSheet.md)
 > [シワの描き方](/Picture/Wrinkle.md)
 
 ## 字の書き方
