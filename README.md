@@ -51,7 +51,7 @@
 > [シワの描き方](/Picture/Wrinkle.md)
 
 ## 字の書き方
-> [字の書き方](/Picture/Calligraphy/Base.md)  
+> [字の書き方](/Calligraphy/Base.md)  
 
 ## 創作
 > [ネーミング](Creation/Naming.md)
