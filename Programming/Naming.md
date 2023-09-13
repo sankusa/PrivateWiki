@@ -5,3 +5,6 @@ current(現在の),
 
 ### フォルダ(名前空間)名
 Common(一般機能)
+
+### 関数
+Restore(復元),Reflesh
