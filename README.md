@@ -62,4 +62,11 @@
 > [雑学ディレクトリ](/Trivia) 
 
 ## ログ
-> [WitchFruit](/Log/Develop/WitchFruit.md)  
+> [WitchFruit](/Log/Develop/WitchFruit.md)
+>
+## ドキュメント作成
+①フォーマット(ドキュメントに記載すべき事項)  
+②方針  
+③たたき台  
+④ブラッシュアップ  
+⑤完成  
