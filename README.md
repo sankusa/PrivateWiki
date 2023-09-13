@@ -37,7 +37,8 @@
 ## プログラム設計
 > [超自分用メモ](/ProgramDesign/ProgramDesignMemo.md)  
 > [設計わからん](/ProgramDesign/ProgramDesign.md)  
-> [設計思考実験](/ProgramDesign/Consider.md)  
+> [設計思考実験](/ProgramDesign/Consider.md)
+> [ビューの設計](/ProgramDesign/ViewDesign.md)  
 
 
 ## ゲーム開発
