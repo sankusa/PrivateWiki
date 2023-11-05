@@ -2,6 +2,7 @@
 - [Objectのロード(1件、全件)](#objectのロード1件全件)
 - [Objectがアセットか判定する](#objectがアセットか判定する)  
 - [便利なサイト](#便利なサイト)
+- [ScriptableObjectをスクリプトから生成](#scriptableobjectをスクリプトから生成)
 
 ***
 
@@ -74,6 +75,23 @@ public static List<T> LoadAllAssets<T> () where T : Object {
 bool AssetDatabase.Contains(Object obj)
 ```
 シーン上やランタイムならfalse
+
+***
+
+## ScriptableObjectをスクリプトから生成
+```
+private static void CreateScriptableObject() {
+    // SaveFilePanel:OSのファイル保存画面を読ぶ。戻り値はフルパス。キャンセル時は空文字。
+    string path = EditorUtility.SaveFilePanel("", "Assets", "MyScriptableObject", "asset");
+
+    if(!string.IsNullOrEmpty(path)) {
+        // インスタンス生成
+        MyScriptableObject obj = ScriptableObject.CreateInstance<MyScriptableObject>();
+        // アセットとして保存
+        AssetDatabase.CreateAsset(obj, path);
+    }
+}
+```
 
 ***
 
