@@ -65,7 +65,7 @@ void OnGUI()
     serializedObject.ApplyModifiedProperties()
 }
 ```
-直接更新する場合はDirtyフラグを立てたり、Undoの対応が必要  
+SerializedPropertyを通さずに直接更新する場合はDirtyフラグを立てたり、Undoの対応が必要  
 
 参考  
 [【Unity】【エディタ拡張】シリアライズ対象の値を直接編集する際の挙動をちゃんと理解する](https://light11.hatenadiary.com/entry/2022/05/25/193411)  
@@ -87,3 +87,4 @@ void OnGUI()
 [【Unity】 EditorWindowのライフサイクルの謎  ](https://www.f-sp.com/entry/2016/09/04/231754)  
 
 ***
+## 
