@@ -1,6 +1,7 @@
 - [EditorWindowテンプレ](#editorwindowテンプレ)
 - [EditorWindowでScriptableObjectを更新する場合](#editorwindowでscriptableobjectを更新する場合)
-- [EditorWindowのライフサイクル関数](#editorwindowのライフサイクル関数)  
+- [EditorWindowのライフサイクル関数](#editorwindowのライフサイクル関数)
+- [エディタ起動時・コンパイル時にStatic関数を実行する(InitializeOnLoad属性)](#エディタ起動時コンパイル時にstatic関数を実行するinitializeonload属性)  
 
 ***
 
@@ -87,4 +88,39 @@ SerializedPropertyを通さずに直接更新する場合はDirtyフラグを立
 [【Unity】 EditorWindowのライフサイクルの謎  ](https://www.f-sp.com/entry/2016/09/04/231754)  
 
 ***
-## 
+## エディタ起動時・コンパイル時にStatic関数を実行する(InitializeOnLoad属性)
+### InitializeOnLoad属性
+クラスに適用すると、エディタ起動時・コンパイル時にstaticコンストラクタが呼ばれる。  
+エディタのコールバックを利用する場合に便利。  
+ 
+ex) InitializeOnLoadによって呼ばれるstaticコンストラクタ内でupdateコールバックに関数を登録。  
+```
+[InitializeOnLoad]
+public class ClassA {
+    static ClassA () {
+        EditorApplication.update += Update;
+    }
+
+    static void Update () {
+        Debug.Log("Updating");
+    }
+}
+```
+
+### InitializeOnLoadMethod属性
+static関数に適用する。staticコンストラクタである必要はないのでこっちの方が使いやすい。  
+
+ex) 上の例と同様の処理  
+```
+public class ClassA {
+    [InitializeOnLoadMethod]
+    static void MethodA() {
+        EditorApplication.update += Update;
+    }
+
+    static void Update () {
+        Debug.Log("Updating");
+    }
+}
+```
+***
