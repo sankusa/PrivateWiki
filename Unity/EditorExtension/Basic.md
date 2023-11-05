@@ -1,7 +1,10 @@
 - [EditorWindowテンプレ](#editorwindowテンプレ)
 - [EditorWindowでScriptableObjectを更新する場合](#editorwindowでscriptableobjectを更新する場合)
 - [EditorWindowのライフサイクル関数](#editorwindowのライフサイクル関数)
-- [エディタ起動時・コンパイル時にStatic関数を実行する(InitializeOnLoad属性)](#エディタ起動時コンパイル時にstatic関数を実行するinitializeonload属性)  
+- [CustomPropertyDrawerテンプレ](#custompropertydrawerテンプレ)
+- [エディタ起動時・コンパイル時にStatic関数を実行する(InitializeOnLoad属性)](#エディタ起動時コンパイル時にstatic関数を実行するinitializeonload属性)
+- [Scope](#scope)
+- [参考記事](#参考記事)  
 
 ***
 
@@ -88,6 +91,20 @@ SerializedPropertyを通さずに直接更新する場合はDirtyフラグを立
 [【Unity】 EditorWindowのライフサイクルの謎  ](https://www.f-sp.com/entry/2016/09/04/231754)  
 
 ***
+## CustomPropertyDrawerテンプレ
+```
+[CustomPropertyDrawer(typeof(SomeClass))]
+public class SomeClassDrawer : PropertyDrawer {
+    public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
+    {
+        label = EditorGUI.BeginProperty(position, label, property);
+
+        EditorGUI.EndProperty();
+    }
+}
+```
+***
+
 ## エディタ起動時・コンパイル時にStatic関数を実行する(InitializeOnLoad属性)
 ### InitializeOnLoad属性
 クラスに適用すると、エディタ起動時・コンパイル時にstaticコンストラクタが呼ばれる。  
@@ -124,3 +141,54 @@ public class ClassA {
 }
 ```
 ***
+
+## Scope
+GUI.Scope継承型
+```
+public class VerticalScope : GUI.Scope {
+    // コンストラクタでエディタの設定を変更
+    public VerticalScope(params GUILayoutOption[] options) {
+        BeginVertical(options);
+    }
+    // CloseScope(Disposeで呼ばれる)で設定を元に戻す
+    protected override void CloseScope() {
+        EndVertical();
+    }
+}
+```
+使い方  
+```
+void OnGUI() {
+    using(new VerticalScope()) {
+        // ブロック内で有効
+    }
+
+    // OnGUIを抜けてDisposeが呼ばれるまで有効
+    using var _ = new VerticalScope();
+}
+```
+理解すれば背景色Scoopeとか色々自作できる  
+
+### Unityで用意されているScope
+GUI.ClipScope
+GUI.GroupScope  
+GUI.ScrollViewScope
+GUILayout.AreaScope  
+GUILayout.ScrollViewScope  
+GUILayout.VerticalScope  
+GUILayout.HorizontalScope  
+EditorGUI.DisabledScope  
+EditorGUI.PropertyScope  
+EditorGUI.ChangeCheckScope  
+EditorGUI.IndentLevelScope  
+EditorGUI.DisabledGroupScope  
+EditorGUILayout.ScrollViewScope  
+EditorGUILayout.VerticalScope  
+EditorGUILayout.FadeGroupScope  
+EditorGUILayout.HorizontalScope  
+EditorGUILayout.ToggleGroupScope  
+
+***
+
+### 参考記事
+[エディタ拡張で仕切り線を描く](https://qiita.com/Gok/items/96e8747269bf4a2a9cc5)
