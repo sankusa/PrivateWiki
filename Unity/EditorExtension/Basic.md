@@ -4,6 +4,7 @@
 - [CustomPropertyDrawerテンプレ](#custompropertydrawerテンプレ)
 - [エディタ起動時・コンパイル時にStatic関数を実行する(InitializeOnLoad属性)](#エディタ起動時コンパイル時にstatic関数を実行するinitializeonload属性)
 - [Scope](#scope)
+- [Unityでアセンブリリロード時に消えない値(SessionState)](#unityでアセンブリリロード時に消えない値sessionstate)  
 - [エディタ拡張で使用できるコールバック一覧](#エディタ拡張で使用できるコールバック一覧)
 - [ヘルプボックス](#ヘルプボックス)  
 - [参考記事](#参考記事)  
@@ -189,6 +190,11 @@ EditorGUILayout.VerticalScope
 EditorGUILayout.FadeGroupScope  
 EditorGUILayout.HorizontalScope  
 EditorGUILayout.ToggleGroupScope  
+
+***
+
+## Unityでアセンブリリロード時に消えない値(SessionState)
+[【Unity】【エディタ】アセンブリリロード時に消えない値を保持するSessionStateの使い方まとめ](https://light11.hatenadiary.com/entry/2022/03/09/203032)  
 
 ***
 
