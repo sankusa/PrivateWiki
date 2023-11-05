@@ -81,7 +81,7 @@ bool AssetDatabase.Contains(Object obj)
 ## ScriptableObjectをスクリプトから生成
 ```
 private static void CreateScriptableObject() {
-    // SaveFilePanel:OSのファイル保存画面を読ぶ。戻り値はフルパス。キャンセル時は空文字。
+    // SaveFilePanel:OSの保存先選択パネルを読ぶ。戻り値はフルパス。キャンセル時は空文字。
     string path = EditorUtility.SaveFilePanel("", "Assets", "MyScriptableObject", "asset");
 
     if(!string.IsNullOrEmpty(path)) {
