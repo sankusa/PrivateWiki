@@ -1,4 +1,4 @@
 ## 企画
-制作目的を明確にする
+[企画](/SoftwareCreate/Plan.md)
 
 ## 要件定義
