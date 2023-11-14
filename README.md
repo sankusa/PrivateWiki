@@ -1,5 +1,5 @@
 # 三草 個人wiki
-> [ソフトウェア製作備忘録](SoftwareCreate.md)  
+> [ソフトウェア製作備忘録](/SoftwareCreate/SoftwareCreate.md)  
 > [プログラムを組むときに見るべし](/Programming/Memo.md)  
 > [命名チートシート](/Programming/Naming.md)  
 ## プログラミング
