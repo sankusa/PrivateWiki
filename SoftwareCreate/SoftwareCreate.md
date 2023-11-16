@@ -16,3 +16,6 @@
 
 ## 要件定義
 [要件定義](/SoftwareCreate/RequirementsDefinition.md)  
+
+## 基本設計
+[要件定義](/SoftwareCreate/BasicDesign.md)  
