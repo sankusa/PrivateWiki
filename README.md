@@ -42,7 +42,7 @@
 > [設計わからん](/ProgramDesign/ProgramDesign.md)  
 > [設計思考実験](/ProgramDesign/Consider.md)  
 > [ビューの設計](/ProgramDesign/ViewDesign.md)  
-> [設計](/ProgramDesign/Example.md)  
+> [設計例題](/ProgramDesign/Example.md)  
 
 ## ゲーム開発
 > [チェクリスト](/GameDevelopment/CheckList.md)  
