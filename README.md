@@ -9,7 +9,7 @@
 >> [String型](/CSharp/String.md)  
 >> [コーディング規約](/CSharp/CordingRule.md)  
 >> [テクい記法](/CSharp/CSharpNotation.md)  
->> [Linq](/CSharp/Linq.md)
+>> [Linq](/CSharp/Linq.md)  
 >> [軽量化に関する知見](/CSharp/Performance.md)  
 > ### Unity
 >> #### Task
